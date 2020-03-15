@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael S. / Blog</title>
+    <link rel="stylesheet" href="../assets/css/blog.css">
+    <!-- <style>
+        p{
+            color: blue;
+        }
+    </style>  -->
+</head>
+
+<body>
+
+    <!-- This is the navigation bar -->
+    <header>
+        <nav>
+            <label>
+                <a class="main" href="myworks.html">My works</a>
+                <a class="main" href="index.html">Home</a></li>
+                <a class="main" href="contact.html">Contact</a></li>
+                <a class="main" href="gallery.html">Gallery</a></li>
+                <a class="main" href="blog.html">Blog</a></li>
+            </label>
+            <ul>
+                <li><a href="./Questions/question1.html" target="_blank">Question One</a></li>
+                <li><a href="./Questions/question2.html" target="_blank">Question Two</a></li>
+                <li><a href="./Questions/question3.html" target="_blank">Question Three</a></li>
+                <li><a href="./Questions/blog.html" target="_blank">My Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Our blog  -->
+    <div class="content">
+        <!-- First Blog -->
+        <section>
+            <p class="title">px vs. relative styles to achieve responsivness</p>
+            <article>
+                <p>
+                    Browsers are getting better and better with lots of additional features. Earlier version of browsers
+                    had limited features, static websites were popular back then. As browser features matured, relative
+                    css units came into existence to meet the needs of changing window sizes.it was clear to choose
+                    between pixel and relative style until this point. But the introduction of browser zooming created
+                    argument among web developers on the relevance of using pixel over relative style to achieve
+                    responsive website.
+                </p>
+                <h4>what is browser zooming?</h4>
+
+                <p>
+                    Browser zooming technically is, when the user zooms the page in a modern browser, everything scales
+                    up or down proportionally.If there is browser zooming feature to accommodate the changes when the
+                    view port is changed. Is relative style still worthy is the main debating point.
+                </p>
+                <div class="large_box">
+                    <div class="static">
+                        <h4>Those who reside in using pixel</h4> <br>
+                        “Browsers handle all the font zooming for us, so we don’t have to convert our typography to
+                        relative units in CSS. Users don’t bother to adjust the font display settings in the browser,
+                        our work is done here!” <br><br>
+                        Values defined in pixels make maintenance of code more straightforward. It also makes code more
+                        portable as styles can be dropped in to another project without potential sizing compounding
+                        issues (em) or needing to adjust values due to different root font sizes (rem). <br> <br>
+                        However, most importantly, pixels make working with designers day to day easier. Pixels provide
+                        a shared language between the worlds of developer and designer. This shared language makes it
+                        easy and accessible for anyone to jump in and change/tweak values in developer tools and get
+                        predictable results.
+                    </div>
+                    <div class="dynamic">
+                        <h4>Those who reside in using relative styles</h4>
+                        <p>
+                            “Yes, browsers handle page zoom for us, yet there’s a difference between how the UI appears
+                            when
+                            the page is zoomed, depending on whether the default browser size has been adjusted as well.
+                            Users do bother to adjust the font display settings in the browser so we need to account for
+                            that in our CSS declarations.” <br> <br>
+                            If the world were an ideal place, we’d all use pixels. But it’s not, we have the broken
+                            browser
+                            to contend with. IE/Win will not allow readers to resize text that has been sized in pixels.
+                            Like it or not, your readers will want to resize text at some point. Perhaps they are
+                            short-sighted, doing a presentation, using a ridiculously high resolution laptop or simply
+                            have
+                            tired eyes. So unless you know (not think) your audience won’t be using IE/Win or will never
+                            wish to resize their text then pixels are not yet a viable solution.
+                        </p>
+                    </div>
+                </div>
+
+                <p>
+                    This guideline states that all website text must be resizable (zoomable). This was more of a problem
+                    in
+                    older browsers from around 2005 where browsers wouldn’t resize text sizes as pixels or points, but
+                    that
+                    isn’t an issue anymore as all modern desktop browsers will trigger a full page zoom.</p>
+                <p>
+                    Except for captions and images of text, text can be resized without assistive technology up to 200
+                    percent without loss of content or functionality.</p>
+                <h4>my judgment</h4>
+                <p>To achieve responsivness after the emergence of zooming feature of browser, the effect of using pixel
+                    is becoming as effective as using relative styles. but I think there are cases where we should
+                    prefer
+                    one over the other.
+                    <ul>
+                        <li>
+                            <p> ✔ As indicated above zooming feature makes pixels as effective as %, rem and em on
+                                achieving
+                                reponsive pages. but there is a condition that does not support this claim. The above
+                                claim is
+                                stated true
+                                provided that that users do <strong> not </strong> dig into the advanced browser
+                                settings to
+                                change their default font size.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                ✔ A lesser known feature of most browsers, though, is the option to adjust your
+                                preferred font size. This feature operates independently from the page zoom
+                                feature.ranging from the very small (9px) through very large (24px) — with the
+                                recommended default of medium set at 16px.
+                                If you change one of those settings in your browser, ideally all your fonts will scale
+                                up (or down) proportionately in reference to the size of that font setting. Ideally,
+                                that is, if you’re using relative CSS units. This browser font size adjustment won’t
+                                have any effect on typography that uses pixels for font-size and/or the line-height.
+                                This brings us to the much-needed example.
+
+                            </p>
+                        </li>
+                        <li>
+                            <p>✔ using relative CSS units rather than relying solely on pixels really bumps up the
+                                reading
+                                experience in a low vision scenario.</p>
+                        </li>
+                    </ul>
+                </p>
+            </article>
+            <p class="date">March 15, 2020: 11:08 aM</p>
+
+        </section>
+
+
+        <!-- Second blog -->
+
+        <section>
+            <p class="title">My first post</p>
+            <article>
+
+            </article>
+            <p class="date">SepTember 8, 2020: 3:00 aM</p>
+
+        </section>
+
+        <!-- Third post -->
+        <section>
+            <p class="title">Css3 Technical additions</p>
+            <article>
+                <p>The main difference between CSS and CSS3 is that CSS3 offers new features and separates CSS into convenient modules.</p>
+            </article>
+            <p class="date">SepTember 8, 2020: 3:00 aM</p>
+    </div>
+
+</body>
+
+</html>
