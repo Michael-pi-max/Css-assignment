@@ -1,0 +1,411 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(to right, lightgray, gray);
+}
+
+/* Adjusment */
+.large_box{
+    width: 100%;
+    height: 200px;
+    padding: 15px;
+    margin: 10px;
+}
+
+.flag_one{
+    width: 30%;
+    height: 180px;
+    margin-left: 15%;
+    float: left;
+
+}
+
+.flag_two{
+    width: 30%;
+    height: 180px;
+    float: right;
+    margin-right: 15%;
+ 
+}
+
+
+/* Ethiopian flag */
+.ethio_green{
+    height: 60px;
+    width: 100%;
+    background-color: green;
+}
+
+.ethio_yellow{
+    height: 60px;
+    width: 100%;
+    background-color: yellow;
+}
+
+.ethio_red{
+    height:60px;
+    width: 100%;
+    background-color: red;
+}
+
+.ethio_emblem{
+    position: absolute;
+    width: 6%;
+    top: 18%;
+    left: 28%;
+}
+
+/* Ertrea flag */
+.ert_green{
+    height: 90px;
+    width: 100%;
+    background-color: green;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 100%);
+    transform: skewY();
+}
+
+.ert_red{
+    height: 90px;
+    width: 30%;
+    background-color: #BC1D00;
+    clip-path: polygon(100% 100%, 0 100%,0 100%, 0 0);
+    position: absolute;
+    top: 9.25%;
+}
+
+.ert_red1{
+    height: 90px;
+    width: 30%;
+    background-color: #BC1D00;
+    clip-path: polygon(0 100%, 100% 0, 100% 0, 0 0);
+    position: absolute;
+    top: 25.25%;
+}
+
+.ert_blue{
+    height: 90px;
+    width: 30%;
+    background-color: blue;
+    clip-path: polygon(0 100%, 0 100%, 100% 100%, 100% 0);
+    position: absolute;
+    top: 25.25%;
+}
+
+.ertrea_emblem{
+    position: absolute;
+    width: 7.5%;
+    top: 15%;
+    right: 35%;
+}
+
+/* Botswana's flag */
+.bots_blue{
+    height:100%;
+    width: 100%;
+    background-color: #6AA4CC;
+}
+
+.bots_white1{
+    height: 2%;
+    width: 30%;
+    background-color: white;
+    position: absolute;
+    bottom: 36%;
+}
+
+.bots_black{
+    height: 7%;
+    width: 30%;
+    background-color: black;
+    position: absolute;
+    bottom: 29%;
+}
+
+.bots_white2{
+    height: 2%;
+    width: 30%;
+    background-color: white;
+    position: absolute;
+    bottom: 27%;
+}
+
+/* Cote 'di 'vuar */
+.cots_orange{
+    height:100%;
+    width: 33.3%;
+    background-color: #F07C00;
+    float: left;
+}
+
+.cots_white{
+    height: 100%;
+    width: 33.3%;
+    background-color: #F8F8F8;
+    float:left;
+}
+
+.cots_green{
+    height: 100%;
+    width: 33.4%;
+    background-color: #009A5D;
+    float:right;
+}
+
+/* netherlands flag*/
+.net_red{
+    height:33%;
+    width: 100%;
+    background-color: #A91B27;
+}
+
+.net_white{
+    height: 33%;
+    width: 100%;
+    background-color: #F8F8F8;
+}
+
+.net_blue{
+    height: 33%;
+    width: 100%;
+    background-color: #204487;
+}
+
+/* belgium flag */
+.belgi_black{
+    height:100%;
+    width: 33.3%;
+    background-color: #000000;
+    float: left;
+}
+
+.belgi_yellow{
+    height: 100%;
+    width: 33.3%;
+    background-color: #F3DA40;
+    float:left;
+}
+
+.belgi_red{
+    height: 100%;
+    width: 33.4%;
+    background-color: #E72837;
+    float:right;
+}
+
+/* sweden flag */
+.swed_blue{
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+
+.swed_yellow1{
+    background-color: yellow;
+    position: absolute;
+    bottom: -57%;
+    width: 30%;
+    height: 4%;
+}
+
+.swed_yellow2{
+    background-color: yellow;
+    width: 2%;
+    height: 32.5%;
+    position: absolute;
+    bottom: -77%;
+    left: 21.5%;
+}
+
+/* bosinia & heguslovinia */
+.bh_blue{
+    background-color: #002291;
+    width: 100%;
+    height: 100%;
+}
+
+.bh_stars{
+    transform: skewY(45deg);
+    position: absolute;
+    bottom: -62.5%;
+    left: 64%;
+}
+
+.bh_yellow{
+    background-color: #F7C500;
+    position: absolute;
+    height: 33%;
+    width: 15%;
+    bottom: -77.5%;
+    left: 65%;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 100%);
+}
+
+/* japan flag */
+.jap_white{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.jap_red{
+    width: 6%;
+    height: 12%;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -115%;
+    left: 28.5%;
+}
+
+/* chile */
+.chile_blue{
+    width: 25%;
+    height: 50%;
+    background-color: blue;
+    float: left;
+}
+
+.chile_white{
+    width: 75%;
+    height: 50%;
+    float: right;
+    background-color: white;
+} 
+
+.chile_red{
+    width: 30%;
+    height: 17.5%;
+    background-color: red;
+    position: absolute;
+    bottom: -127.5%;
+}
+
+.chile_star{
+    position: absolute;
+    bottom: -103.5%;
+    left: 59.5%;
+}
+
+/* costa rica */
+.costa_red1{
+    width: 100%;
+    height: 20%;
+    background-color: red;
+}
+.costa_white1{
+    width: 100%;
+    height: 20%;
+    background-color: white;
+}
+
+.costa_red2{
+    width: 100%;
+    height: 20%;
+    background-color: red;
+}
+.costa_white2{
+    width: 100%;
+    height: 20%;
+    background-color: white;
+}
+
+.costa_red3{
+    width: 100%;
+    height: 20%;
+    background-color: red;
+}
+
+.costa_blue1{
+    position: absolute;
+    width: 12.5%;
+    height: 16.8%;
+    bottom: -154%;
+    background-color: blue;
+    clip-path: polygon(100% 100%, 0 100%,0 100%, 0 0);
+}
+
+.costa_blue2{
+    position: absolute;
+    width: 12.5%;
+    height: 16%;
+    bottom: -170%;
+    background-color: blue;
+    clip-path: polygon(0 100%, 100% 0, 100% 0, 0 0);
+}
+
+.costa_rica{
+    position: absolute;
+    left: 20%;
+    bottom: -155%;
+}
+
+/* uruagay flag*/
+.uru_white{
+    width: 25%;
+    height: 62.5%;
+    background-color: white;
+    float: left;
+}
+
+.uru_white1{
+    width: 75%;
+    height: 12.5%;
+    background-color: white;
+    float: right;
+}
+.uru_blue1{
+    width: 75%;
+    height: 12.5%;
+    background-color: blue;
+    float: right;
+}
+.uru_white2{
+    width: 75%;
+    height: 12.5%;
+    background-color: white;
+    float: right;
+}
+.uru_blue2{
+    width: 75%;
+    height: 12.5%;
+    background-color: blue;
+    float: right;
+}
+.uru_white3{
+    width: 75%;
+    height: 12.5%;
+    background-color: white;
+    float: right;
+}
+
+.uru_blue3{
+    width: 100%;
+    height: 12.5%;
+    background-color: blue;
+    float: right;
+}
+
+.uru_white4{
+    width: 100%;
+    height: 12.5%;
+    background-color: white;
+    float: right;
+}
+
+.uru_blue4{
+    width: 100%;
+    height: 12.5%;
+    background-color: blue;
+    float: right;
+}
+
+.uru_emblem{
+    width: 6%;
+    height: 9%;
+    position: absolute;
+    bottom: -153%;
+    left: 57.5%;
+}
