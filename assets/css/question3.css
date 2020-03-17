@@ -54,7 +54,7 @@ body{
 .ethio_emblem{
     position: absolute;
     width: 6%;
-    top: 18%;
+    top: 30%;
     left: 28%;
 }
 
@@ -73,7 +73,7 @@ body{
     background-color: #BC1D00;
     clip-path: polygon(100% 100%, 0 100%,0 100%, 0 0);
     position: absolute;
-    top: 8.5%;
+    top: 21.75%;
 }
 
 .ert_red1{
@@ -82,7 +82,7 @@ body{
     background-color: #BC1D00;
     clip-path: polygon(0 100%, 100% 0, 100% 0, 0 0);
     position: absolute;
-    top: 23%;
+    top: 36.5%;
 }
 
 .ert_blue{
@@ -91,13 +91,13 @@ body{
     background-color: blue;
     clip-path: polygon(0 100%, 0 100%, 100% 100%, 100% 0);
     position: absolute;
-    top: 23%;
+    top: 36.5%;
 }
 
 .ertrea_emblem{
     position: absolute;
     width: 7.5%;
-    top: 15%;
+    top:28%;
     right: 35%;
 }
 
@@ -113,7 +113,7 @@ body{
     width: 30%;
     background-color: white;
     position: absolute;
-    bottom: 42%;
+    top: 70%;
 }
 
 .bots_black{
@@ -121,7 +121,7 @@ body{
     width: 30%;
     background-color: black;
     position: absolute;
-    bottom: 35%;
+    top: 72%;
 }
 
 .bots_white2{
@@ -129,7 +129,7 @@ body{
     width: 30%;
     background-color: white;
     position: absolute;
-    bottom: 27%;
+    top: 78%;
 }
 
 /* Cote 'di 'vuar */
@@ -213,9 +213,9 @@ body{
 .swed_yellow2{
     background-color: yellow;
     width: 2%;
-    height: 32.5%;
+    height: 30%;
     position: absolute;
-    bottom: -77%;
+    bottom: -76%;
     left: 21.5%;
 }
 
@@ -236,9 +236,9 @@ body{
 .bh_yellow{
     background-color: #F7C500;
     position: absolute;
-    height: 33%;
+    height: 30%;
     width: 15%;
-    bottom: -77.5%;
+    bottom: -76%;
     left: 65%;
     clip-path: polygon(0 0, 100% 0, 100% 0, 100% 100%);
 }
@@ -256,7 +256,7 @@ body{
     background-color: red;
     border-radius: 50%;
     position: absolute;
-    bottom: -115%;
+    bottom: -112%;
     left: 28.5%;
 }
 
@@ -277,15 +277,15 @@ body{
 
 .chile_red{
     width: 30%;
-    height: 17.5%;
+    height: 16%;
     background-color: red;
     position: absolute;
-    bottom: -127.5%;
+    bottom: -122.5%;
 }
 
 .chile_star{
     position: absolute;
-    bottom: -103.5%;
+    bottom: -101.5%;
     left: 59.5%;
 }
 
@@ -320,18 +320,18 @@ body{
 
 .costa_blue1{
     position: absolute;
-    width: 12.5%;
-    height: 16.8%;
-    bottom: -154%;
+    width: 11%;
+    height: 15%;
+    bottom: -146.4%;
     background-color: blue;
     clip-path: polygon(100% 100%, 0 100%,0 100%, 0 0);
 }
 
 .costa_blue2{
     position: absolute;
-    width: 12.5%;
-    height: 16%;
-    bottom: -170%;
+    width: 11%;
+    height: 15%;
+    bottom: -161%;
     background-color: blue;
     clip-path: polygon(0 100%, 100% 0, 100% 0, 0 0);
 }
@@ -339,7 +339,7 @@ body{
 .costa_rica{
     position: absolute;
     left: 20%;
-    bottom: -155%;
+    bottom: -147%;
 }
 
 /* uruagay flag*/
@@ -406,6 +406,6 @@ body{
     width: 6%;
     height: 9%;
     position: absolute;
-    bottom: -153%;
+    bottom: -145%;
     left: 57.5%;
 }

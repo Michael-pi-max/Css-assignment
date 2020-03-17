@@ -1,0 +1,65 @@
+.wrapper {
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.container {
+    display: flex;
+    margin: 2%;
+    border-top: 1px lightgray solid;
+    border-bottom: 1px lightgray solid;
+    padding: 10px;
+
+}
+
+.box {
+    height: 400px;
+    width: 30%;
+    min-width: 50px;
+    flex-grow: 1;
+}
+
+.leftbox {
+    width: 50%;
+}
+
+.footer {
+    justify-content: center;
+    background-image: linear-gradient(to right, lightgray, gray);
+}
+
+.footer a {
+    margin-right: 1%;
+
+}
+
+.large_box {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+}
+
+.static {
+    width: 45%;
+    height: 250px;
+    border: 2px lightgray solid;
+    float: left;
+    overflow: scroll;
+    padding: 15px;
+}
+
+.dynamic {
+    width: 45%;
+    height: 250px;
+    border: 2px lightgray solid;
+    float: right;
+    overflow: scroll;
+    padding: 15px;
+}
+
+p {
+    margin: 15px;
+    clear: left;
+}
+

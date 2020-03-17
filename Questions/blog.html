@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michael S. / Blog</title>
+    <link rel="shortcut icon" href="../assets/image/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../assets/css/blog.css">
+    <link rel="stylesheet" href="../assets/css/navigation_bar.css">
+    <link rel="stylesheet" href="../assets/css/container_layout.css">
     <!-- <style>
         p{
             color: blue;
@@ -15,219 +18,251 @@
 
 <body>
 
-    <!-- This is the navigation bar -->
+    <!-- This is the header -->
     <header>
         <nav>
-            <label>
-                <a class="main" href="myworks.html">My works</a>
-                <a class="main" href="index.html">Home</a></li>
-                <a class="main" href="contact.html">Contact</a></li>
-                <a class="main" href="gallery.html">Gallery</a></li>
-                <a class="main" href="blog.html">Blog</a></li>
-            </label>
             <ul>
-                <li><a href="./Questions/question1.html" target="_blank">Question One</a></li>
-                <li><a href="./Questions/question2.html" target="_blank">Question Two</a></li>
-                <li><a href="./Questions/question3.html" target="_blank">Question Three</a></li>
-                <li><a href="./Questions/blog.html" target="_blank">My Blog</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="../myworks.html">My Works</a></li>
             </ul>
         </nav>
     </header>
 
-    <!--Our blog  -->
-    <div class="content">
-        <!-- First Blog -->
-        <section>
-            <p class="title">px vs. relative styles to achieve responsivness</p>
-            <article>
-                <p>
-                    Browsers are getting better and better with lots of additional features. Earlier version of browsers
-                    had limited features, static websites were popular back then. As browser features matured, relative
-                    css units came into existence to meet the needs of changing window sizes.it was clear to choose
-                    between pixel and relative style until this point. But the introduction of browser zooming created
-                    argument among web developers on the relevance of using pixel over relative style to achieve
-                    responsive website.
-                </p>
-                <h4>what is browser zooming?</h4>
-
-                <p>
-                    Browser zooming technically is, when the user zooms the page in a modern browser, everything scales
-                    up or down proportionally.If there is browser zooming feature to accommodate the changes when the
-                    view port is changed. Is relative style still worthy is the main debating point.
-                </p>
-                <div class="large_box">
-                    <div class="static">
-                        <h4>Those who reside in using pixel</h4> <br>
-                        “Browsers handle all the font zooming for us, so we don’t have to convert our typography to
-                        relative units in CSS. Users don’t bother to adjust the font display settings in the browser,
-                        our work is done here!” <br><br>
-                        Values defined in pixels make maintenance of code more straightforward. It also makes code more
-                        portable as styles can be dropped in to another project without potential sizing compounding
-                        issues (em) or needing to adjust values due to different root font sizes (rem). <br> <br>
-                        However, most importantly, pixels make working with designers day to day easier. Pixels provide
-                        a shared language between the worlds of developer and designer. This shared language makes it
-                        easy and accessible for anyone to jump in and change/tweak values in developer tools and get
-                        predictable results.
-                    </div>
-                    <div class="dynamic">
-                        <h4>Those who reside in using relative styles</h4>
-                        <p>
-                            “Yes, browsers handle page zoom for us, yet there’s a difference between how the UI appears
-                            when
-                            the page is zoomed, depending on whether the default browser size has been adjusted as well.
-                            Users do bother to adjust the font display settings in the browser so we need to account for
-                            that in our CSS declarations.” <br> <br>
-                            If the world were an ideal place, we’d all use pixels. But it’s not, we have the broken
-                            browser
-                            to contend with. IE/Win will not allow readers to resize text that has been sized in pixels.
-                            Like it or not, your readers will want to resize text at some point. Perhaps they are
-                            short-sighted, doing a presentation, using a ridiculously high resolution laptop or simply
-                            have
-                            tired eyes. So unless you know (not think) your audience won’t be using IE/Win or will never
-                            wish to resize their text then pixels are not yet a viable solution.
-                        </p>
-                    </div>
-                </div>
-
-                <p>
-                    This guideline states that all website text must be resizable (zoomable). This was more of a problem
-                    in
-                    older browsers from around 2005 where browsers wouldn’t resize text sizes as pixels or points, but
-                    that
-                    isn’t an issue anymore as all modern desktop browsers will trigger a full page zoom.</p>
-                <p>
-                    Except for captions and images of text, text can be resized without assistive technology up to 200
-                    percent without loss of content or functionality.</p>
-                <h4>my judgment</h4>
-                <p>To achieve responsivness after the emergence of zooming feature of browser, the effect of using pixel
-                    is becoming as effective as using relative styles. but I think there are cases where we should
-                    prefer
-                    one over the other.
-                    <ul>
-                        <li>
-                            <p> ✔ As indicated above zooming feature makes pixels as effective as %, rem and em on
-                                achieving
-                                reponsive pages. but there is a condition that does not support this claim. The above
-                                claim is
-                                stated true
-                                provided that that users do <strong> not </strong> dig into the advanced browser
-                                settings to
-                                change their default font size.
-                            </p>
-                        </li>
-                        <li>
+    <!-- Our Blog -->
+    <div class="wrapper">
+        <div class="content" id="section1">
+            <!-- First Blog -->
+            <section>
+                <p class="title">px vs. relative styles to achieve responsivness</p>
+                <article>
+                    <div class="container2">
+                        <div class="leftbox2">
+                            <img src="../assets/image/responsive.png" alt="responsive">
+                        </div>
+                        <div class="rightbox2">
                             <p>
-                                ✔ A lesser known feature of most browsers, though, is the option to adjust your
-                                preferred font size. This feature operates independently from the page zoom
-                                feature.ranging from the very small (9px) through very large (24px) — with the
-                                recommended default of medium set at 16px.
-                                If you change one of those settings in your browser, ideally all your fonts will scale
-                                up (or down) proportionately in reference to the size of that font setting. Ideally,
-                                that is, if you’re using relative CSS units. This browser font size adjustment won’t
-                                have any effect on typography that uses pixels for font-size and/or the line-height.
-                                This brings us to the much-needed example.
-
+                                Browsers are getting better and better with lots of additional features. Earlier version
+                                of browsers
+                                had limited features, static websites were popular back then. As browser features
+                                matured, relative
+                                css units came into existence to meet the needs of changing window sizes.it was clear to
+                                choose
+                                between pixel and relative style until this point. But the introduction of browser
+                                zooming created
+                                argument among web developers on the relevance of using pixel over relative style to
+                                achieve
+                                responsive website.
                             </p>
-                        </li>
-                        <li>
-                            <p>✔ using relative CSS units rather than relying solely on pixels really bumps up the
-                                reading
-                                experience in a low vision scenario.</p>
-                        </li>
-                    </ul>
-                </p>
-            </article>
-            <p class="date">March 15, 2020: 11:08 aM</p>
+                            <h4>what is browser zooming?</h4>
 
-        </section>
+                            <p>
+                                Browser zooming technically is, when the user zooms the page in a modern browser,
+                                everything scales
+                                up or down proportionally.If there is browser zooming feature to accommodate the changes
+                                when the
+                                view port is changed. Is relative style still worthy is the main debating point.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="large_box">
+                        <div class="static">
+                            <h4>Those who reside in using pixel</h4> <br>
+                            “Browsers handle all the font zooming for us, so we don’t have to convert our typography to
+                            relative units in CSS. Users don’t bother to adjust the font display settings in the
+                            browser,
+                            our work is done here!” <br><br>
+                            Values defined in pixels make maintenance of code more straightforward. It also makes code
+                            more
+                            portable as styles can be dropped in to another project without potential sizing compounding
+                            issues (em) or needing to adjust values due to different root font sizes (rem). <br> <br>
+                            However, most importantly, pixels make working with designers day to day easier. Pixels
+                            provide
+                            a shared language between the worlds of developer and designer. This shared language makes
+                            it
+                            easy and accessible for anyone to jump in and change/tweak values in developer tools and get
+                            predictable results.
+                        </div>
+                        <div class="dynamic">
+                            <h4>Those who reside in using relative styles</h4>
+                            <p>
+                                “Yes, browsers handle page zoom for us, yet there’s a difference between how the UI
+                                appears
+                                when
+                                the page is zoomed, depending on whether the default browser size has been adjusted as
+                                well.
+                                Users do bother to adjust the font display settings in the browser so we need to account
+                                for
+                                that in our CSS declarations.” <br> <br>
+                                If the world were an ideal place, we’d all use pixels. But it’s not, we have the broken
+                                browser
+                                to contend with. IE/Win will not allow readers to resize text that has been sized in
+                                pixels.
+                                Like it or not, your readers will want to resize text at some point. Perhaps they are
+                                short-sighted, doing a presentation, using a ridiculously high resolution laptop or
+                                simply
+                                have
+                                tired eyes. So unless you know (not think) your audience won’t be using IE/Win or will
+                                never
+                                wish to resize their text then pixels are not yet a viable solution.
+                            </p>
+                        </div>
+                    </div>
+                    <p>
+                        This guideline states that all website text must be resizable (zoomable). This was more of a
+                        problem
+                        in
+                        older browsers from around 2005 where browsers wouldn’t resize text sizes as pixels or points,
+                        but
+                        that
+                        isn’t an issue anymore as all modern desktop browsers will trigger a full page zoom.</p>
+                    <p>
+                        Except for captions and images of text, text can be resized without assistive technology up to
+                        200
+                        percent without loss of content or functionality.</p>
+                    <h4>my judgment</h4>
+                    <p>To achieve responsivness after the emergence of zooming feature of browser, the effect of using
+                        pixel
+                        is becoming as effective as using relative styles. but I think there are cases where we should
+                        prefer
+                        one over the other. </p>
 
+                    <p> ✔ As indicated above zooming feature makes pixels as effective as %, rem and em on
+                        achieving
+                        reponsive pages. but there is a condition that does not support this claim. The
+                        above
+                        claim is
+                        stated true
+                        provided that that users do <strong> not </strong> dig into the advanced browser
+                        settings to
+                        change their default font size.
+                    </p>
+
+                    <p>
+                        ✔ A lesser known feature of most browsers, though, is the option to adjust your
+                        preferred font size. This feature operates independently from the page zoom
+                        feature.ranging from the very small (9px) through very large (24px),with the
+                        recommended default of medium set at 16px.
+                        If you change one of those settings in your browser, ideally all your fonts will
+                        scale
+                        up (or down) proportionately in reference to the size of that font setting. Ideally,
+                        that is, if you’re using relative CSS units. This browser font size adjustment won’t
+                        have any effect on conditions that uses pixels for font-size.
+                    </p>
+
+                    <p>✔ using relative CSS units rather than relying solely on pixels really bumps up the
+                        reading
+                        experience in a low vision scenario. The user might want to adjust the font size of the browser
+                        setting without changing the zoom if his vision is low or if he is teaching using a projector on
+                        this cases relative styles are better</p>
+
+                </article>
+                <p class="date">March 15, 2020: 11:08 aM</p>
+
+            </section>
+        </div>
 
         <!-- Second blog -->
+        <div class="content">
+            <section>
+                <p class="title">Default font and being overwritten by CSS</p>
+                <article>
+                    <p>Sixteen pixel is the default font size which means if it is not overwitten by being specified on
+                        the css or changed from the default browser setting as mentioned on the above blog, the text
+                        size becomes 16 pixel. So when the font is set to 200px, the font size is no longer the default
+                        HTML font(16px), it is overwritten to 200px</p>
+                </article>
+                <p class="date">March 16, 2020: 9:17 aM</p>
 
-        <section>
-            <p class="title">Default font and being overwritten by CSS</p>
-            <article>
-                <p>Sixteen pixel is the default font size which means if it is not overwitten by being specified on
-                    the css or changed from the default browser setting as mentioned on the above blog, the text
-                    size becomes 16 pixel. So when the font is set to 200px, the font size is no longer the default
-                    HTML font(16px), it is overwritten to 200px</p>
-            </article>
-            <p class="date">March 16, 2020: 3: 17 aM</p>
-
-        </section>
-
+            </section>
+        </div>
         <!-- Third post -->
-        <section>
-            <p class="title">Css3 Technical additions</p>
-            <article>
-                <p> The main difference between CSS and CSS3 is that CSS3 offers new features and separates CSS into
-                    convenient modules.</p>
-                <h3>
-                    1.CSS3 Selectors
-                </h3>
-                <p>CSS allowed the matching of elements by type, class, and/or ID. CSS2.1 added pseudo-elements,
-                    pseudo-classes, and combinators. With CSS3, we can target almost any element on the page with a
-                    wide
-                    range of selectors.
-                    CSS2 introduced several attribute selectors. These allow for matching elements based on their
-                    attributes. CSS3 expands upon those attribute selectors.Three more attribute selectors were
-                    added in
-                    CSS3; they allow for substring selection.</p>
+        <div class="content">
+            <section>
+                <p class="title">Css3 Technical additions</p>
+                <article>
+                    <p> The main difference between CSS and CSS3 is that CSS3 offers new features and separates CSS into
+                        convenient modules.</p>
 
-                <h3>2. Pseudo-classes</h3>
-                <p>
-                    It’s likely that you’re already familiar with some of the user interaction pseudo-classes,namely
-                    :link, :visited, :hover, :active, and :focus.
-                    A few more pseudo-class selectors were added in CSS3. One is the :root selector, which allows
-                    designers to point to the root element of a document. In HTML, it would be <html>. Since :root
-                    is generic, it allows a designer to select the root element of an XML document without
-                    necessarily knowing it’s name.
-                </p>
-                <h3>3. CSS3 Colors</h3>
-                <p>CSS3 brings with it support for some new ways of describing colours . Prior to CSS3, we almost
-                    always declared colours using the hexadecimal format (#FFF, or #FFFFFF for white). It was also
-                    possible to declare colours using the rgb() notation, providing either integers (0–255) or
-                    percentages.
-                    The color keyword list has been extended in the CSS3 color module to include 147 additional
-                    keyword
-                    colors (that are generally well supported), CSS3 also provides us with a number of other
-                    options:
-                    HSL, HSLA, and RGBA. The most notable change with these new color types is the ability to
-                    declare
-                    semitransparent colors. </p>
-                <h3>4. Rounded Corners: border-radius </h3>
-                <p> The border-radius property lets you create rounded corners without the need for images or
-                    additional
-                    markup. To add rounded corners to our box, we simply add
-                    border-radius: 25px; </p>
+                    <h3>
+                        1.CSS3 Selectors
+                    </h3>
+                    <p>CSS allowed the matching of elements by type, class, and/or ID. CSS2.1 added pseudo-elements,
+                        pseudo-classes, and combinators. With CSS3, we can target almost any element on the page with a
+                        wide
+                        range of selectors.
+                        CSS2 introduced several attribute selectors. These allow for matching elements based on their
+                        attributes. CSS3 expands upon those attribute selectors.Three more attribute selectors were
+                        added in
+                        CSS3; they allow for substring selection.</p>
 
-                <h3>5. Drop Shadows</h3>
-                <p>CSS3 provides the ability to add drop shadows to elements using the box-shadow property. This
-                    property lets you specify the color, height, width, blur, and offset of one or multiple inner
-                    and/or
-                    outer drop shadows on your elements.
-                    box-shadow: 2px 5px 0 0 rgba(72,72,72,1);</p>
+                    <h3>2. Pseudo-classes</h3>
+                    <p>
+                        It’s likely that you’re already familiar with some of the user interaction pseudo-classes,namely
+                        :link, :visited, :hover, :active, and :focus.
+                        A few more pseudo-class selectors were added in CSS3. One is the :root selector, which allows
+                        designers to point to the root element of a document. In HTML, it would be <html>. Since :root
+                        is generic, it allows a designer to select the root element of an XML document without
+                        necessarily knowing it’s name.
+                    </p>
+                    <h3>3. CSS3 Colors</h3>
+                    <p>CSS3 brings with it support for some new ways of describing colours . Prior to CSS3, we almost
+                        always declared colours using the hexadecimal format (#FFF, or #FFFFFF for white). It was also
+                        possible to declare colours using the rgb() notation, providing either integers (0–255) or
+                        percentages.
+                        The color keyword list has been extended in the CSS3 color module to include 147 additional
+                        keyword
+                        colors (that are generally well supported), CSS3 also provides us with a number of other
+                        options:
+                        HSL, HSLA, and RGBA. The most notable change with these new color types is the ability to
+                        declare
+                        semitransparent colors. </p>
+                    <h3>4. Rounded Corners: border-radius </h3>
+                    <p> The border-radius property lets you create rounded corners without the need for images or
+                        additional
+                        markup. To add rounded corners to our box, we simply add
+                        border-radius: 25px; </p>
 
-                <h3>6. Text Shadow</h3>
-                <p>text-shadow adds shadows to individual characters in text nodes. Prior to CSS 3, this would be
-                    done
-                    by either using an image or duplicating a text element and then positioning it.
-                    text-shadow: topOffset leftOffset blurRadius color;</p>
+                    <h3>5. Drop Shadows</h3>
+                    <p>CSS3 provides the ability to add drop shadows to elements using the box-shadow property. This
+                        property lets you specify the color, height, width, blur, and offset of one or multiple inner
+                        and/or
+                        outer drop shadows on your elements.
+                        box-shadow: 2px 5px 0 0 rgba(72,72,72,1);</p>
 
-                <h3>7. Linear Gradients </h3>
-                <p> The syntax for generating linear gradients with CSS3 is added.</p>
+                    <h3>6. Text Shadow</h3>
+                    <p>text-shadow adds shadows to individual characters in text nodes. Prior to CSS 3, this would be
+                        done
+                        by either using an image or duplicating a text element and then positioning it.
+                        text-shadow: topOffset leftOffset blurRadius color;</p>
 
-                <h3>8. Opacity</h3>
-                <p> One of the CSS3 properties called opacity makes elements see-through or completely transparent.
-                    For instance, you can apply opacity to images or other HTML elements. The transparency level
-                    depends
-                    on the indicated values.</p>
-                <h3>9. Font Additions</h3>
-                <p> Adding fonts is super easy in CSS 3, all you need to do is just upload the file to your server,
-                    link
-                    to the CSS file and add fonts as per your choice.</p>
-            </article>
-            <p class="date">March 16, 2020: 10:45 aM</p>
+                    <h3>7. Linear Gradients </h3>
+                    <p> The syntax for generating linear gradients with CSS3 is added.</p>
+
+                    <h3>8. Opacity</h3>
+                    <p> One of the CSS3 properties called opacity makes elements see-through or completely transparent.
+                        For instance, you can apply opacity to images or other HTML elements. The transparency level
+                        depends
+                        on the indicated values.</p>
+                    <h3>9. Font Additions</h3>
+                    <p> Adding fonts is super easy in CSS 3, all you need to do is just upload the file to your server,
+                        link
+                        to the CSS file and add fonts as per your choice.</p>
+                </article>
+                <p class="date">March 16, 2020: 10:45 aM</p>
+        </div>
+    </div>
+    <!-- This is the footer -->
+    <div class="footer container">
+        <a href="http://www.facebook.com/" target="_blank">FaceBook</a>
+        <a href="http://www.twitter.com" target="_blank">Twitter</a>
+        <a href="http://www.youtube.com" target="_blank">youTube</a>
+    </div>
+
+    <div class="footer container">
+        Developed by Michael Solomon &copy;2020
     </div>
 
 </body>

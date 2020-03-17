@@ -1,130 +1,92 @@
-* {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-}
-
-.content{
-    width: 80%;
-    margin: auto;
-}
-
-body {
-    background-color: skyblue;
+body{
+    background-color: white;
     color: black;
-    margin: 10px 0;
+    margin: 0 0;
+    padding: 0 0;
     border: solid lightgray 1px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header {
+header{
     background-color: rgba(119, 90, 90, 0.6);
     position: fixed;
     width: 100%;
+
 }
 
-nav {
-    background-color: black;
-    height: 80px;
-    width: 100%;
-}
-
-label a.main{
-   float: left;
-   margin-left: 20px;
-   line-height: 15px;
-   margin-top: 4px;;
-}
-
-nav ul{
-    float: right;
-    margin-right: 20px;
-}
-
-section {
+section{
     font-family: Arial, Helvetica, sans-serif;
     padding: 2px 30px;
     margin-top: 100px;
 }
 
-article {
+article{
     font-size: 15px;
-    text-align: justify;
+    text-align:justify;
     line-height: 17px;
 }
 
-.title {
+.title{
     font-size: 23px;
     font-weight: bold;
 }
 
-.date {
+.date{
     font-size: 15px;
     font-style: italic;
     text-transform: uppercase;
-    clear: left;
 }
 
 
 /* Targeting the navigation */
-nav>ul>li {
+nav>ul>li{
     display: inline-block;
     padding: 10px 3px;
     font-size: 20px;
 }
 
-nav>ul>li>a {
+nav>ul>li>a{
     text-decoration: none;
 }
 
 /* psudo design */
-nav>ul>li:link {
+nav>ul>li:link{
     background-color: #dddddd
 }
 
-nav>ul>li:visited {
+nav>ul>li:visited{
     background-color: lightgreen;
 }
 
-nav>ul>li:hover {
+nav>ul>li:hover{
     background-color: #ffffff;
 }
 
-nav>ul>li:active {
+nav>ul>li:active{
     background-color: lime;
 }
 
 
 /* Targeting the blog */
 
-.large_box{
+.container2{
+    display: flex;
+    min-width: 100px;
+}
+
+.leftbox2{
+    margin: 7px;
     width: 100%;
-    height: auto;
-    padding: 15px;
+    height: 50px;
 }
 
-.static{
-    width: 40%;
-    height: 250px;
-    border: 2px black dotted;
-    float: left;
-    margin-left: 5%;
-    overflow: scroll;
-    padding: 15px;
+.rightbox2{
+    margin: 7px;
 }
 
-.dynamic{
-    width: 40%;
-    height: 250px;
-    border: 2px black dotted;
-    float: right;
-    margin-right: 5%;
-    overflow: scroll;   
-    padding: 15px;
+.leftbox2 img{
+    width: 100%;
 }
 
-p{
-    margin: 15px;
-    clear: left;
+.large_box{
+    padding-bottom: 15px;
 }
