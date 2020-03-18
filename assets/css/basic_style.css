@@ -1,0 +1,50 @@
+.profile{
+    width: 80%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.profile:hover{
+    width: 85%;
+}
+
+.Introduction{
+    margin-top: 24%;
+}
+
+h3.topic{
+    border-bottom:1px lightgray solid;
+    border-top: 1px lightgray solid;
+    padding: 5px;
+    background-image: linear-gradient(to right, lightgray, gray);
+}
+
+h1, h3, p{
+    margin: 2%;
+    border: 0;
+}
+
+ul.interest li{
+    margin-left: 5%;
+}
+
+form{
+    text-align: left;
+}
+
+form{
+    margin-top: 26px;
+    margin-left: 26px;
+}
+
+form div{
+    padding: 2px;
+}
+
+
+
+
+input[type="submit"]{
+    width: 80px;
+    height: 40px;   
+}
