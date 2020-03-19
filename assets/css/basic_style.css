@@ -42,9 +42,69 @@ form div{
 }
 
 
+.boxinput{
+    border: 1px lightblue solid;
+    padding: 5px;
+}
 
+.boxinput:focus{
+    border: 1px blue dotted;
+    background-color: lightgray;
+}
+
+.field1{
+    position: relative;
+    left: 50px;
+}
+
+.field2{
+    position: relative;
+    left: 50px;
+}
+
+.field3{
+    position: relative;
+    left: 35px;
+}
+
+.field4{
+    position: relative;
+    left: 85px;
+}
+
+.field5{
+    position: relative;
+    left: 60px;
+}
+
+.field6{
+    position: relative;
+    left: 22.65px;
+}
+
+.field7{
+    position: relative;
+    left: 56px;
+}
+
+.field8{
+    position: relative;
+    left: 50px;
+}
+
+.field9{
+    width: 100%;
+}
 
 input[type="submit"]{
-    width: 80px;
+    width: 178px;
     height: 40px;   
+    background-color: lightgray;
+    border-radius: 50%;
+    margin-left: 25%;
+}
+
+ul li.category{
+    margin: 0;
+    padding: 0;
 }

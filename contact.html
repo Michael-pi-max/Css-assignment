@@ -65,51 +65,47 @@
                 <form action="mailto:se.michaelsolomon@gmail.com">
                     <div>
                         <label for="fName">First Name: </label>
-                        <input type="text" name="firstName" id="fName" pattern="[A-Za-z/d/.]{4,8}" required
+                        <input type="text" class = "boxinput field1" name="firstName" id="fName" pattern="[A-Za-z/d/.]{4,8}" required
                             title="The field must contain letters only and the length must be between 4 and 8">
                     </div>
                     <div>
                         <label for="lName">Last Name: </label>
-                        <input type="text" name="lastName" id="lName" pattern="[A-Za-z/d/.]{4,8}" required
+                        <input type="text" class = "boxinput field2" name="lastName" id="lName" pattern="[A-Za-z/d/.]{4,8}" required
                             title="The field must contain letters and the length must be between 4 and 8">
                     </div>
                     <div>
                         <label for="tel">phone number </label>
-                        <input type="tel" id="tel" name="tel" pattern="[0-9/A-Za-z]{10}" required
+                        <input type="tel" id="tel" name="tel" class = "boxinput field3" pattern="[0-9/A-Za-z]{10}" required
                             title="The field must contain 10 digit numbers only">
                     </div>
                     <div>
                         <label for="email">Email </label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" class = "boxinput field4" id="email">
                     </div>
                     <div>
                         <label for="password">Password </label>
-                        <input type="password" name="password" id="password" pattern="[A-Za-z]{8, 14}" title="name">
+                        <input type="password" name="password" id="password" class = " boxinput field5" pattern="[A-Za-z]{8, 14}" title="name">
                     </div>
                     <div>
                         <label for="url">Git hub address </label>
-                        <input type="url" id="url" name="url">
+                        <input type="url" id="url" name="url" class = "boxinput field6">
                     </div>
                     <div>
                         <label for="myDate">Birth time</label>
-                        <input type="date" name="myDate" min="1980-06-01" max="2030-00-00" step="3600" id="myDate">
+                        <input type="date" name="myDate" min="1980-06-01" max="2030-00-00" class = "boxinput field7" step="3600" id="myDate">
                     </div>
                     <div>
                         <label for="country">Birth place</label>
-                        <select name="country" id="country">
+                        <select name="country" id="country" class = "boxinput field8">
                             <option value="Et">Ethiopia</option>
                             <option value="Lo">London</option>
                         </select>
                     </div>
                     <div>
-                        <label for="price">Rate </label>
-                        <input type="range" name="price" id="price" min="50000" max="500000" step="100" value="250000">
-                    </div>
-                    <div>
                         <label for="message">Comment </label>
                     </div>
                     <div>
-                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        <textarea name="message" id="message" cols="30" rows="10" class = "boxinput field9"></textarea>
                     </div>
                     <input type="submit">
                 </form>
